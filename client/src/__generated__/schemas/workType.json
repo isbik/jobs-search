@@ -1,0 +1,1 @@
+{"type":"string","enum":["full-time","part-time","internship","contract"],"x-readme-ref-name":"workType"}

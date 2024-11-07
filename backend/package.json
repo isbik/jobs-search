@@ -1,0 +1,40 @@
+{
+  "name": "job-search",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "bun src/db/seed.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hono/swagger-ui": "^0.4.1",
+    "@hono/zod-openapi": "^0.16.4",
+    "@hono/zod-validator": "^0.4.1",
+    "argon2": "^0.41.1",
+    "cookie": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.35.3",
+    "hono": "^4.6.6",
+    "pg": "^8.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.1",
+    "@types/cookie": "^0.6.0",
+    "@types/pg": "^8.11.10",
+    "drizzle-kit": "^0.26.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-drizzle": "^0.2.3",
+    "openapi3-ts": "^4.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.11.0"
+  }
+}
